@@ -1,6 +1,41 @@
+body {
+    background-image: url("../images/taustapilt.jpg");
+    background-repeat: no-repeat;
+    margin: 0;
+}
+header {
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: end;
+    font-style: normal;
+}
+.main-title {
+    font-size:46px;
+}
+.navigation{
+    background-color: rgb(51, 50, 48);
+    font-size: 24px;
+}
+main {
+    background-color: rgb(206, 196, 196);
+    padding: 30px;
+    display: grid;
+}
 p {
     width: 30px;
+    font-weight: bold;
     }
-ing {
-    width: 150px
-    ;
+img {
+    width: 300px;
+    border-radius: 30px;
+    float: left;
+    margin-right: 10px;
+    height: 270px;
+}
+video{ 
+ width: 150px;
+ border-radius: 20px;
+ margin-right: 10px;
+}
