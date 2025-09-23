@@ -2,6 +2,9 @@ body {
     background-image: url("../images/taustapilt.jpg");
     background-repeat: no-repeat;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 header {
     background-color: lightblue;
@@ -14,20 +17,22 @@ header {
 .main-title {
     font: size 46px;
 }
-.navigation{
-    background-color: rgb(51, 50, 48);
-    font-size: 24px;
+nav{
+    font-size: 15px;
+    justify-content: space-between;
+    align-items: center;
     
 }
 main {
     background-color: rgb(206, 196, 196);
     padding: 30px;
-    display: grid;
+    display: flex;
+    flex: 1;
 }
 p {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
-    text-align: justify;
+    text-align: center;
     margin-bottom: 1rem;
     }
 img {
@@ -44,6 +49,8 @@ video{
 }
 body {
     color: white;
+    flex-direction: column;
+    min-height: 100vh;
 }
 button:hover {
     font-size: 1.1rem;
@@ -52,4 +59,17 @@ button:hover {
 button:active {
     font-size: 1.1rem;
     background-color: brown;
+}
+footer {
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-shrink: 0;
+}
+.container {
+  display: grid;
+  row-gap: 90px;
+  grid-template-columns: auto auto auto;
+  background-color: dodgerblue;
+  padding: 10px;
 }
