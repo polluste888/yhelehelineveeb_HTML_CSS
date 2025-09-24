@@ -1,10 +1,12 @@
 body {
     background-image: url("../images/taustapilt.jpg");
     background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
 }
 header {
     background-color: lightblue;
@@ -13,21 +15,46 @@ header {
     align-items: center;
     justify-items: end;
     font-style: normal;
+    text-align: center;
+    padding: 1rem 0;
 }
+header h1 {
+    margin: 0.3rem 0;
+    }
 .main-title {
-    font: size 46px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #feffff;
 }
-nav{
-    font-size: 15px;
-    justify-content: space-between;
-    align-items: center;
-    
+nav {
+    margin-top: 1rem;
 }
-main {
-    background-color: rgb(206, 196, 196);
-    padding: 30px;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+    }
+    nav a:hover {
+    color: #ffcc00;
+}
+main, section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+.video-ja-pilt {
     display: flex;
-    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+#Kontakt p {
+    margin: 0.5rem 0;
 }
 p {
     font-size: 18px;
@@ -61,15 +88,8 @@ button:active {
     background-color: brown;
 }
 footer {
-  color: white;
-  padding: 20px;
-  display: flex;
-  flex-shrink: 0;
-}
-.container {
-  display: grid;
-  row-gap: 90px;
-  grid-template-columns: auto auto auto;
-  background-color: dodgerblue;
-  padding: 10px;
+    text-align: center;
+    padding: 1rem;""
+    color: white;
+    margin-top: 2rem;
 }
