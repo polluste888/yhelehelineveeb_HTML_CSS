@@ -1,95 +1,122 @@
 body {
     background-image: url("../images/taustapilt.jpg");
     background-repeat: no-repeat;
+    background-position: center center; /* keskele joondamine */
+    background-size: cover;             /* pilt täidab kogu ala, lõikub vajadusel */
+    background-attachment: fixed;       /* jääb fikseerituks, kui kerid */
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
+    min-height: 100vh;                  /* täidab kogu ekraani kõrguse */
 }
+
 header {
-    background-color: lightblue;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: end;
-    font-style: normal;
-    text-align: center;
-    padding: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: end;
+  font-style: normal;
+  text-align: center;
+  padding: 1rem 0;
 }
 header h1 {
-    margin: 0.3rem 0;
-    }
+  margin: 0.3rem 0;
+}
 .main-title {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #feffff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #feffff;
 }
 nav {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 1rem;
-    font-weight: bold;
-    transition: color 0.3s;
-    }
-    nav a:hover {
-    color: #ffcc00;
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
 }
-main, section {
-    padding: 2rem;
-    max-width: 1000px;
-    margin: auto;
+nav a:hover {
+  color: #ffcc00;
+}
+main,
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
 }
 .video-ja-pilt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin: 2rem auto;
-    max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  max-width: 1000px;
 }
 #Kontakt p {
-    margin: 0.5rem 0;
+  margin: 0.5rem 0;
 }
 p {
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 1rem;
-    }
-img {
-    width: 300px;
-    border-radius: 30px;
-    float: left;
-    margin-right: 10px;
-    height: 270px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
 }
-video{ 
- width: 150px;
- border-radius: 20px;
- margin-right: 10px;
+img {
+  width: 300px;
+  border-radius: 30px;
+  float: left;
+  margin-right: 10px;
+  height: 270px;
+}
+video {
+  width: 150px;
+  border-radius: 20px;
+  margin-right: 10px;
 }
 body {
-    color: white;
-    flex-direction: column;
-    min-height: 100vh;
+  color: white;
+  flex-direction: column;
+  min-height: 100vh;
 }
 button:hover {
-    font-size: 1.1rem;
-    background-color: aliceblue;
+  font-size: 1.1rem;
+  background-color: aliceblue;
 }
 button:active {
-    font-size: 1.1rem;
-    background-color: brown;
+  font-size: 1.1rem;
+  background-color: brown;
 }
 footer {
-    text-align: center;
-    padding: 1rem;""
-    color: white;
-    margin-top: 2rem;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  margin-top: 2rem;
 }
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        margin: 0.5rem 0;
+    }
+    .video-ja-pilt {
+        flex-direction: column;
+        align-items: center;
+    }
+    main, section {
+        padding: 1rem;
+    }
+    body {
+        min-height: 100vh;
+        background-size: cover;
+    }
+}
+
